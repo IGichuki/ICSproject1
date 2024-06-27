@@ -63,7 +63,7 @@
                                                 <ul class="submenu">
                                                     <li><a href="blog.html">Blog</a></li>
                                                     <li><a href="single-blog.html">Blog Details</a></li>
-                                                    <li><a href="elements.html">Elements</a></li>
+                                                    <li><a href="elements.html">Job categories</a></li>
                                                     <li><a href="job_details.html">job Details</a></li>
                                                 </ul>
                                             </li>
