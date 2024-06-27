@@ -318,97 +318,7 @@ https://www.tooplate.com/view/2127-little-fashion
                 </div>
             </section>
 
-            <section class="featured-product section-padding">
-                <div class="container">
-                    <div class="row">
-                        
-                        <div class="col-12 text-center">
-                            <h2 class="mb-5">Featured Products</h2>
-                        </div>
-
-                        <div class="col-lg-4 col-12 mb-3">
-                            <div class="product-thumb">
-                                <a href="product-detail.html">
-                                    <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
-                                </a>
-
-                                <div class="product-top d-flex">
-                                    <span class="product-alert me-auto">New Arrival</span>
-
-                                    <a href="#" class="bi-heart-fill product-icon"></a>
-                                </div>
-
-                                <div class="product-info d-flex">
-                                    <div>
-                                        <h5 class="product-title mb-0">
-                                            <a href="product-detail.html" class="product-title-link">Tree pot</a>
-                                        </h5>
-
-                                        <p class="product-p">Original package design from house</p>
-                                    </div>
-
-                                    <small class="product-price text-muted ms-auto mt-auto mb-5">$25</small>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-12 mb-3">
-                            <div class="product-thumb">
-                                <a href="product-detail.html">
-                                    <img src="images/product/jordan-nix-CkCUvwMXAac-unsplash.jpeg" class="img-fluid product-image" alt="">
-                                </a>
-
-                                <div class="product-top d-flex">
-                                    <span class="product-alert">Low Price</span>
-
-                                    <a href="#" class="bi-heart-fill product-icon ms-auto"></a>
-                                </div>
-
-                                <div class="product-info d-flex">
-                                    <div>
-                                        <h5 class="product-title mb-0">
-                                            <a href="product-detail.html" class="product-title-link">.E.C.T Set</a>
-                                        </h5>
-
-                                        <p class="product-p">Costume Package</p>
-                                    </div>
-
-                                    <small class="product-price text-muted ms-auto mt-auto mb-5">$35</small>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-12">
-                            <div class="product-thumb">
-                                <a href="product-detail.html">
-                                    <img src="images/product/nature-zen-3Dn1BZZv3m8-unsplash.jpeg" class="img-fluid product-image" alt="">
-                                </a>
-
-                                <div class="product-top d-flex">
-                                    <a href="#" class="bi-heart-fill product-icon ms-auto"></a>
-                                </div>
-
-                                <div class="product-info d-flex">
-                                    <div>
-                                        <h5 class="product-title mb-0">
-                                            <a href="product-detail.html" class="product-title-link">Juice Drinks</a>
-                                        </h5>
-
-                                        <p class="product-p">Nature made another world</p>
-                                    </div>
-
-                                    <small class="product-price text-muted ms-auto mt-auto mb-5">$45</small>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 text-center">
-                            <a href="products.html" class="view-all">View All Products</a>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
+           <b>
 
         </main>
 
@@ -418,9 +328,9 @@ https://www.tooplate.com/view/2127-little-fashion
 
                     <div class="col-lg-3 col-10 me-auto mb-4">
                         <h4 class="text-white mb-3"><a href="index.html">C.O.N</a> .E.C.T</h4>
-                        <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">Copyright © 2022 <strong>C.O.N .E.C.T</strong></p>
+                        <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">always be with <strong> C.O.N .E.C.T</strong></p>
                         <br>
-                        <p class="copyright-text">Designed by <a href="https://www.tooplate.com/" target="_blank">Tooplate</a></p>
+                        <p class="copyright-text">Designed by <a href="https://www.tooplate.com/" target="_blank">Conect</a></p>
                     </div>
 
                     <div class="col-lg-5 col-8">
@@ -429,7 +339,6 @@ https://www.tooplate.com/view/2127-little-fashion
                         <ul class="footer-menu d-flex flex-wrap">
                             <li class="footer-menu-item"><a href="about" class="footer-menu-link">Story</a></li>
 
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Products</a></li>
 
                             <li class="footer-menu-item"><a href="#" class="footer-menu-link">Privacy policy</a></li>
 
