@@ -19,6 +19,9 @@ Route::get('/', function () {
 Route::get('joblisting', function () {
     return view('joblisting');
 });
+Route::get('jobposting', function () {
+    return view('jobposting');
+});
 Route::get('about', function () {
     return view('about');
 });

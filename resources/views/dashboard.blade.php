@@ -73,7 +73,7 @@
                                 </div>          
                                 <!-- Header-btn -->
                                 <div class="header-btn d-none f-right d-lg-block">
-                                    <a href="#" class="btn head-btn1">Post a job</a>
+                                    <a href="jobposting" class="btn head-btn1">Post a job</a>
                                     <a href="joblisting" class="btn head-btn2">want a job?</a>
                                 </div>
                             </div>

@@ -46,9 +46,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-3 col-md-2">
                             <!-- Logo -->
-                            <div class="logo">
-                                <a href="dashboard"><img src="assets/img/logo/logo.png" alt=""></a>
-                            </div>  
+                            
                         </div>
                         <div class="col-lg-9 col-md-9">
                             <div class="menu-wrapper">
@@ -89,12 +87,12 @@
 
         <!-- Hero Area Start-->
         <div class="slider-area ">
-            <div class="single-slider section-overly slider-height2 d-flex align-items-center" data-background="assets/img/hero/about.jpg">
+            <div class="single-slider section-overly slider-height2 d-flex align-items-center" data-background="assets/img/hero/posting1.png">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="hero-cap text-center">
-                                <h2>Get your job</h2>
+                                <h2>POST A JOB</h2>
                             </div>
                         </div>
                     </div>
@@ -107,210 +105,77 @@
             <div class="container">
                 <div class="row">
                     <!-- Left content -->
-                    <div class="col-xl-3 col-lg-3 col-md-4">
-                        <div class="row">
-                            <div class="col-12">
-                                    <div class="small-section-tittle2 mb-45">
-                                    <div class="ion"> <svg 
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        width="20px" height="12px">
-                                    <path fill-rule="evenodd"  fill="rgb(27, 207, 107)"
-                                        d="M7.778,12.000 L12.222,12.000 L12.222,10.000 L7.778,10.000 L7.778,12.000 ZM-0.000,-0.000 L-0.000,2.000 L20.000,2.000 L20.000,-0.000 L-0.000,-0.000 ZM3.333,7.000 L16.667,7.000 L16.667,5.000 L3.333,5.000 L3.333,7.000 Z"/>
-                                    </svg>
-                                    </div>
-                                    <h4>Filter Jobs</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Job Category Listing start -->
-                        <div class="job-category-listing mb-50">
-                            <!-- single one -->
-                            <div class="single-listing">
-                               <div class="small-section-tittle2">
-                                     <h4>Job Category</h4>
-                               </div>
-                                <!-- Select job items start -->
-                                <div class="select-job-items2">
-                                    <select name="select">
-                                        <option value="">All Category</option>
-                                        <option value="">Category 1</option>
-                                        <option value="">Category 2</option>
-                                        <option value="">Category 3</option>
-                                        <option value="">Category 4</option>
-                                    </select>
-                                </div>
-                                <!--  Select job items End-->
-                                <!-- select-Categories start -->
-                                <div class="select-Categories pt-80 pb-50">
-                                    <div class="small-section-tittle2">
-                                        <h4>Job Type</h4>
-                                    </div>
-                                    <label class="container">Full Time
-                                        <input type="checkbox" >
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="container">Part Time
-                                        <input type="checkbox" checked="checked active">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="container">Remote
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="container">Freelance
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <!-- select-Categories End -->
-                            </div>
-                            <!-- single two -->
-                            <div class="single-listing">
-                               <div class="small-section-tittle2">
-                                     <h4>Job Location</h4>
-                               </div>
-                                <!-- Select job items start -->
-                                <div class="select-job-items2">
-                                    <select name="select">
-                                        <option value="">Anywhere</option>
-                                        <option value="">Category 1</option>
-                                        <option value="">Category 2</option>
-                                        <option value="">Category 3</option>
-                                        <option value="">Category 4</option>
-                                    </select>
-                                </div>
-                                <!--  Select job items End-->
-                                <!-- select-Categories start -->
-                                <div class="select-Categories pt-80 pb-50">
-                                    <div class="small-section-tittle2">
-                                        <h4>Experience</h4>
-                                    </div>
-                                    <label class="container">1-2 Years
-                                        <input type="checkbox" >
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="container">2-3 Years
-                                        <input type="checkbox" checked="checked active">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="container">3-6 Years
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="container">6-more..
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <!-- select-Categories End -->
-                            </div>
-                            <!-- single three -->
-                            <div class="single-listing">
-                                <!-- select-Categories start -->
-                                <div class="select-Categories pb-50">
-                                    <div class="small-section-tittle2">
-                                        <h4>Posted Within</h4>
-                                    </div>
-                                    <label class="container">Any
-                                        <input type="checkbox" >
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="container">Today
-                                        <input type="checkbox" checked="checked active">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="container">Last 2 days
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="container">Last 3 days
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="container">Last 5 days
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="container">Last 10 days
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <!-- select-Categories End -->
-                            </div>
-                            <div class="single-listing">
-                                <!-- Range Slider Start -->
-                                <aside class="left_widgets p_filter_widgets price_rangs_aside sidebar_box_shadow">
-                                    <div class="small-section-tittle2">
-                                        <h4>Filter Jobs</h4>
-                                    </div>
-                                    <div class="widgets_inner">
-                                        <div class="range_item">
-                                            <!-- <div id="slider-range"></div> -->
-                                            <input type="text" class="js-range-slider" value="" />
-                                            <div class="d-flex align-items-center">
-                                                <div class="price_text">
-                                                    <p>Price :</p>
-                                                </div>
-                                                <div class="price_value d-flex justify-content-center">
-                                                    <input type="text" class="js-input-from" id="amount" readonly />
-                                                    <span>to</span>
-                                                    <input type="text" class="js-input-to" id="amount" readonly />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </aside>
-                              <!-- Range Slider End -->
-                            </div>
-                        </div>
-                        <!-- Job Category Listing End -->
-                    </div>
-                    <!-- Right content -->
-                    <div class="col-xl-9 col-lg-9 col-md-8">
-                        <!-- Featured_job_start -->
-                        <section class="featured-job-area">
-                            <div class="container">
-                                <!-- Count of Job list Start -->
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="count-job mb-35">
-                                            <span>39, 782 Jobs found</span>
-                                            <!-- Select job items start -->
-                                            <div class="select-job-items">
-                                                <span>Sort by</span>
-                                                <select name="select">
-                                                    <option value="">None</option>
-                                                    <option value="">job list</option>
-                                                    <option value="">job list</option>
-                                                    <option value="">job list</option>
-                                                </select>
-                                            </div>
-                                            <!--  Select job items End-->
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Count of Job list End -->
-                                <!-- single-job-content -->
-                             
-        <!--Pagination End  -->
-        <form action="/submit" method="POST">
-            @csrf
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" class="form-control" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" class="form-control" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" class="form-control" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+                   
+        <!-- Form Start -->
+     
+    <div class="single-slider section-overly slider-height2 d-flex align-items-center" data-background="assets/img/hero/posting1.png">>
+        <div class="job-form" style="margin: 0 auto; max-width: 600px;">
+            <form action="/submit-job" method="POST" enctype="multipart/form-data">
+                @csrf
+                <div class="form-group">
+                    <label for="job_title">Job Title</label>
+                    <input type="text" name="job_title" id="job_title" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="job_description">Job Description</label>
+                    <textarea name="job_description" id="job_description" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="job_location">Job Location</label>
+                    <input type="text" name="job_location" id="job_location" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="job_type">Job Type</label>
+                    <select name="job_type" id="job_type" class="form-control" required>
+                        <option value="Full Time">Full Time</option>
+                        <option value="Part Time">Part Time</option>
+                        <option value="Remote">Remote</option>
+                        <option value="Freelance">Freelance</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="job_category">Job Category</label>
+                    <input type="text" name="job_category" id="job_category" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="experience">Experience</label>
+                    <input type="text" name="experience" id="experience" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="salary">Salary</label>
+                    <input type="text" name="salary" id="salary" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="company_name">Company Name</label>
+                    <input type="text" name="company_name" id="company_name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="company_logo">Company Logo</label>
+                    <input type="file" name="company_logo" id="company_logo" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="company_description">Company Description</label>
+                    <textarea name="company_description" id="company_description" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="company_website">Company Website</label>
+                    <input type="text" name="company_website" id="company_website" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="how_to_apply">How to Apply</label>
+                    <textarea name="how_to_apply" id="how_to_apply" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="application_deadline">Application Deadline</label>
+                    <input type="date" name="application_deadline" id="application_deadline" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+        <!-- Form End -->
         
     </main>
     <footer>
