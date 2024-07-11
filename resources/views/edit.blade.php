@@ -8,21 +8,21 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="manifest" href="site.webmanifest">
-        <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.ico') }}">
+        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 
         <!-- CSS here -->
-        <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/css/price_rangs.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/css/flaticon.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/css/slicknav.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/css/animate.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/css/fontawesome-all.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/css/themify-icons.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/css/slick.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/css/nice-select.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+        <link rel="stylesheet" href="{{ asset('public/assets/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('public/assets/css/owl.carousel.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('public/assets/css/price_rangs.css') }}">
+        <link rel="stylesheet" href="{{ asset('public/assets/css/flaticon.css') }}">
+        <link rel="stylesheet" href="{{ asset('public/assets/css/slicknav.css') }}">
+        <link rel="stylesheet" href="{{ asset('public/assets/css/animate.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('public/assets/css/magnific-popup.css') }}">
+        <link rel="stylesheet" href="{{ asset('public/assets/css/fontawesome-all.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('public/assets/css/themify-icons.css') }}">
+        <link rel="stylesheet" href="{{ asset('public/assets/css/slick.css') }}">
+        <link rel="stylesheet" href="{{ asset('public/assets/css/nice-select.css') }}">
+        <link rel="stylesheet" href="{{ asset('public/assets/css/style.css') }}">
     </head>
 
    <body>
@@ -32,7 +32,7 @@
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
                 <div class="preloader-img pere-text">
-                    <img src="assets/img/logo/logo.png" alt="">
+                    <img src="public/assets/img/logo/logo.png" alt="">
                 </div>
             </div>
         </div>
@@ -87,7 +87,7 @@
 
         <!-- Hero Area Start-->
         <div class="slider-area ">
-            <div class="single-slider section-overly slider-height2 d-flex align-items-center" data-background="assets/img/hero/posting1.png">
+            <div class="single-slider section-overly slider-height2 d-flex align-items-center" data-background="public/assets/img/hero/posting1.png">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12">
@@ -105,99 +105,101 @@
             <div class="container">
                 <div class="row">
                     <!-- Left content -->
-                   
+                </div>
+            </div>
+        </div>
         <!-- Form Start -->
-     @if(session('status'))
-        <div class="alert alert-success">
-            {{ session('status') }}
-        </div>
-    @endif
-    <div class="job-form" style="margin: 0 auto; max-width: 600px; width: 120%;">
-       
-        <form action="{{ url('jobposting')}}" method="POST" enctype="multipart/form-data">
-            @csrf
-            <div class="form-group">
-                <label for="job_title">Job Title</label>
-                <input type="text" name="job_title" id="job_title" class="form-control" required>
-                @error('job_title')<div class="alert alert-danger">{{ $message }}</div>@enderror
+        @if(session('message'))
+            <div class="alert alert-success">
+                {{ session('message') }}
             </div>
-            <div class="form-group">
-                <label for="job_description">Job Description</label>
-                <textarea name="job_description" id="job_description" class="form-control" required></textarea>
-                @error('job_description')<div class="alert alert-danger">{{ $message }}</div>@enderror
-            </div>
-            <div class="form-group">
-                <label for="job_location">Job Location</label>
-                <input type="text" name="job_location" id="job_location" class="form-control" required>
-                @error('job_location')<div class="alert alert-danger">{{ $message }}</div>@enderror
-            </div>
-            <div class="form-group">
-                <label for="job_type">Job Type</label>
-                <select name="job_type" id="job_type" class="form-control" required>
-                    <option value="Full Time">Full Time</option>
-                    <option value="Part Time">Part Time</option>
-                    <option value="Remote">Remote</option>
-                    <option value="Freelance">Freelance</option>
-                </select>
-
-                
-            </div>
-            <div class="form-group">
-                <label for="job_category">Job Category</label>
-                <input type="text" name="job_category" id="job_category" class="form-control" required>
-                @error('job_category')<div class="alert alert-danger">{{ $message }}</div>@enderror
-            </div>
-            <div class="form-group">
-                <label for="experience">Experience</label>
-                <input type="text" name="experience" id="experience" class="form-control" required>
-                @error('experience')<div class="alert alert-danger">{{ $message }}</div>@enderror
-            </div>
-            <div class="form-group">
-                <label for="salary">Salary</label>
-                <input type="text" name="salary" id="salary" class="form-control" required>
-                @error('salary')<div class="alert alert-danger">{{ $message }}</div>@enderror
-            </div>
-            <div class="form-group">
-                <label for="company_name">Company Name</label>
-                <input type="text" name="company_name" id="company_name" class="form-control" required>
-                @error('company_name')<div class="alert alert-danger">{{ $message }}</div>@enderror
-            </div>
-            <!-- <div class="form-group">
-                <label for="company_logo">Company Logo</label>
-                <input type="file" name="company_logo" id="company_logo" class="form-control" required>
-            </div> -->
-            <div class="form-group">
-                <label for="company_description">Company Description</label>
-                <textarea name="company_description" id="company_description" class="form-control" required></textarea>
-                @error('company_description')<div class="alert alert-danger">{{ $message }}</div>@enderror
-            </div>
-            <div class="form-group">
-                <label for="company_website">Company Website</label>
-                <input type="text" name="company_website" id="company_website" class="form-control" required>
-                @error('company_website')<div class="alert alert-danger">{{ $message }}</div>@enderror
-            </div>
-            <div class="form-group">
-                <label for="how_to_apply">How to Apply</label>
-                <textarea name="how_to_apply" id="how_to_apply" class="form-control" required></textarea>
-                @error('how_to_apply')<div class="alert alert-danger">{{ $message }}</div>@enderror
-            </div>
-            <div class="form-group">
-                <label for="application_deadline">Application Deadline</label>
-                <input type="date" name="application_deadline" id="application_deadline" class="form-control" required>
-                @error('application_deadline')<div class="alert alert-danger">{{ $message }}</div>@enderror
-            </div>
-            <div class="form-group">
-                <a href="javascript:history.back()" class="btn btn-secondary">Back</a>
-                <button type="submit" class="btn btn-primary">Submit</button>
-                
-            </div>
-        </form>
-    </div>
-        
+        @endif
+        <div class="job-form" style="margin: 0 auto; max-width: 600px; width: 120%;">
            
+            <form action="{{ url('jobposting'.$jobposting->id.'/edit')}}" method="POST" enctype="multipart/form-data">
+                @csrf
+                <div class="form-group">
+                    <label for="job_title">Job Title</label>
+                    <input type="text" name="job_title" id="job_title" value="{{$jobposting->job_title}}" class="form-control" required>
+                    @error('job_title')<div class="alert alert-danger">{{ $message }}</div>@enderror
+                </div>
+                <div class="form-group">
+                    <label for="job_description">Job Description</label>
+                    <textarea name="job_description" id="job_description" value="{{$jobposting->job_description}}"class="form-control" required></textarea>
+                    @error('job_description')<div class="alert alert-danger">{{ $message }}</div>@enderror
+                </div>
+                <div class="form-group">
+                    <label for="job_location">Job Location</label>
+                    <input type="text" name="job_location" id="job_location"value="{{$jobposting->job_location}}" class="form-control" required>
+                    @error('job_location')<div class="alert alert-danger">{{ $message }}</div>@enderror
+                </div>
+                <div class="form-group">
+                    <label for="job_type">Job Type</label>
+                    <select name="job_type" id="job_type" class="form-control" required>
+                        <option value="Full Time">Full Time</option>
+                        <option value="Part Time">Part Time</option>
+                        <option value="Remote">Remote</option>
+                        <option value="Freelance">Freelance</option>
+                    </select>
+
+                    
+                </div>
+                <div class="form-group">
+                    <label for="job_category">Job Category</label>
+                    <input type="text" name="job_category" id="job_category" value="{{$jobposting->job_category}}"class="form-control" required>
+                    @error('job_category')<div class="alert alert-danger">{{ $message }}</div>@enderror
+                </div>
+                <div class="form-group">
+                    <label for="experience">Experience</label>
+                    <input type="text" name="experience" id="experience"value="{{$jobposting->experience}}" class="form-control" required>
+                    @error('experience')<div class="alert alert-danger">{{ $message }}</div>@enderror
+                </div>
+                <div class="form-group">
+                    <label for="salary">Salary</label>
+                    <input type="text" name="salary" id="salary" value="{{$jobposting->salary}}"class="form-control" required>
+                    @error('salary')<div class="alert alert-danger">{{ $message }}</div>@enderror
+                </div>
+                <div class="form-group">
+                    <label for="company_name">Company Name</label>
+                    <input type="text" name="company_name" id="company_name"value="{{$jobposting->company_name}}" class="form-control" required>
+                    @error('company_name')<div class="alert alert-danger">{{ $message }}</div>@enderror
+                </div>
+                <!-- <div class="form-group">
+                    <label for="company_logo">Company Logo</label>
+                    <input type="file" name="company_logo" id="company_logo" class="form-control" required>
+                </div> -->
+                <div class="form-group">
+                    <label for="company_description">Company Description</label>
+                    <textarea name="company_description" id="company_description" value="{{$jobposting->company_description}}"class="form-control" required></textarea>
+                    @error('company_description')<div class="alert alert-danger">{{ $message }}</div>@enderror
+                </div>
+                <div class="form-group">
+                    <label for="company_website">Company Website</label>
+                    <input type="text" name="company_website" id="company_website" value="{{$jobposting->company_website}}"class="form-control" required>
+                    @error('company_website')<div class="alert alert-danger">{{ $message }}</div>@enderror
+                </div>
+                <div class="form-group">
+                    <label for="how_to_apply">How to Apply</label>
+                    <textarea name="how_to_apply" id="how_to_apply"value="{{$jobposting->how_to_apply}}" class="form-control" required></textarea>
+                    @error('how_to_apply')<div class="alert alert-danger">{{ $message }}</div>@enderror
+                </div>
+                <div class="form-group">
+                    <label for="application_deadline">Application Deadline</label>
+                    <input type="date" name="application_deadline" id="application_deadline"value="{{$jobposting->application_deadline}}" class="form-control" required>
+                    @error('application_deadline')<div class="alert alert-danger">{{ $message }}</div>@enderror
+                </div>
+                <div class="form-group">
+                    <a href="javascript:history.back()" class="btn btn-secondary">Back</a>
+                    <button type="submit" class="btn btn-primary">update</button>
+                    
+                </div>
+            </form>
         </div>
+        
+       
     </div>
-        <!-- Form End -->
+</div>
+<!-- Form End -->
         
     </main>
     <footer>

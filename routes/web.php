@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\jobpostingController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,9 +16,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('joblisting', function () {
-    return view('joblisting');
+
+Route::get('about', function () {
+    return view('about');
 });
+Route::get('application', function () {
+    return view('application');
+});
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
@@ -28,3 +33,13 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+Route::get('joblisting', [jobpostingController::class, 'index']);
+Route::get('jobposting', [jobpostingController::class, 'create']);
+Route::post('jobposting', [jobpostingController::class, 'store']);
+Route::get('jobposting/{id}/edit', [jobpostingController::class, 'edit']);
+Route::get('joblisting/{id}/apply', [jobpostingController::class, 'apply']);
+Route::get('joblisting/{id}/delete', [jobpostingController::class, 'delete']);
+
+
+

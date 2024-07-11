@@ -47,7 +47,7 @@ https://www.tooplate.com/view/2127-little-fashion
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="/">
                         <strong><span>C.O.N</span> .E.C.T</strong>
                     </a>
 
