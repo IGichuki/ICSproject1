@@ -68,10 +68,6 @@ https://www.tooplate.com/view/2127-little-fashion
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="products.html">Products</a>
-                            </li>
-
-                            <li class="nav-item">
                                 <a class="nav-link" href="faq.html">FAQs</a>
                             </li>
 
