@@ -108,6 +108,18 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Search and Filter Form -->
+                    <div class="row mb-4">
+                        <div class="col-xl-12">
+                            <form method="GET" action="{{ url('joblisting') }}" class="form-inline d-flex flex-wrap gap-2">
+                                <input type="text" name="keyword" class="form-control mb-2 mr-sm-2" placeholder="Keyword" value="{{ request('keyword') }}">
+                                <input type="text" name="location" class="form-control mb-2 mr-sm-2" placeholder="Location" value="{{ request('location') }}">
+                                <input type="text" name="category" class="form-control mb-2 mr-sm-2" placeholder="Category" value="{{ request('category') }}">
+                                <button type="submit" class="btn btn-primary mb-2">Search</button>
+                                <a href="{{ url('joblisting') }}" class="btn btn-secondary mb-2">Reset</a>
+                            </form>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-xl-12">
                             <a href="{{ url('jobposting') }}" class="btn white-btn">Post a Job</a>

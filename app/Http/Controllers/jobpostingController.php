@@ -8,9 +8,33 @@ use App\Models\jobposting;
 class jobpostingController extends Controller
 {
 
-   public function index()
+   public function index(Request $request)
    {
-    $jobpostings = jobposting::get();
+       $query = jobposting::query();
+       if ($request->filled('keyword')) {
+           $keyword = $request->keyword;
+           $query->where(function($q) use ($keyword) {
+               $q->where('job_title', 'like', "%$keyword%")
+                 ->orWhere('job_description', 'like', "%$keyword%")
+                 ->orWhere('company_name', 'like', "%$keyword%")
+                 ->orWhere('company_description', 'like', "%$keyword%")
+                 ->orWhere('job_location', 'like', "%$keyword%")
+                 ->orWhere('job_category', 'like', "%$keyword%")
+                 ->orWhere('job_type', 'like', "%$keyword%")
+                 ->orWhere('experience', 'like', "%$keyword%")
+                 ->orWhere('salary', 'like', "%$keyword%")
+                 ->orWhere('how_to_apply', 'like', "%$keyword%")
+                 ->orWhere('company_website', 'like', "%$keyword%")
+                 ->orWhere('application_deadline', 'like', "%$keyword%") ;
+           });
+       }
+       if ($request->filled('location')) {
+           $query->where('job_location', 'like', "%{$request->location}%");
+       }
+       if ($request->filled('category')) {
+           $query->where('job_category', 'like', "%{$request->category}%");
+       }
+       $jobpostings = $query->get();
        return view('joblisting', compact('jobpostings'));
    }
    public function create()

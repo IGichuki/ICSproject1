@@ -24,4 +24,9 @@ class jobposting extends Model
         'how_to_apply',
         'application_deadline',
     ];
+
+    public function applications()
+    {
+        return $this->hasMany(Application::class, 'jobposting_id');
+    }
 }

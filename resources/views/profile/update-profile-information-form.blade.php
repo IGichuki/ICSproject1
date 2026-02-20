@@ -52,6 +52,23 @@
             </div>
         @endif
 
+        <!-- Resume Upload -->
+        <div class="col-span-6 sm:col-span-4">
+            <x-label for="resume" value="{{ __('Resume (PDF, DOC, DOCX)') }}" />
+            <input id="resume" type="file" class="mt-1 block w-full" wire:model="resume" accept=".pdf,.doc,.docx" />
+            @if ($this->user->resume_path)
+                <a href="{{ Storage::url($this->user->resume_path) }}" target="_blank" class="text-blue-600 underline">View Current Resume</a>
+            @endif
+            <x-input-error for="resume" class="mt-2" />
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-span-6 sm:col-span-4">
+            <x-label for="contact_info" value="{{ __('Contact Information') }}" />
+            <textarea id="contact_info" class="mt-1 block w-full" wire:model="state.contact_info" rows="3"></textarea>
+            <x-input-error for="contact_info" class="mt-2" />
+        </div>
+
         <!-- Name -->
         <div class="col-span-6 sm:col-span-4">
             <x-label for="name" value="{{ __('Name') }}" />

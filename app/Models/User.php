@@ -27,7 +27,26 @@ class User extends Authenticatable implements MustVerifyEmail
         'name',
         'email',
         'password',
+        'role',
+        'resume_path',
+        'contact_info',
+        'company_profile',
     ];
+
+    public function isEmployer()
+    {
+        return $this->role === 'employer';
+    }
+
+    public function isSeeker()
+    {
+        return $this->role === 'seeker';
+    }
+
+    public function isAdmin()
+    {
+        return $this->role === 'admin';
+    }
 
     /**
      * The attributes that should be hidden for serialization.
